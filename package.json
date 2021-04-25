@@ -163,5 +163,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vanilla-framework": "^2.28.0"
+  }
 }

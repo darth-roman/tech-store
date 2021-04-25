@@ -1,3 +1,11 @@
+@import '../../node_modules/vanilla-framework/scss/vanilla';
+
+@include vanilla;
+
 body{
     background-color: red;
+}
+
+.red-text{
+    color: red;
 }
