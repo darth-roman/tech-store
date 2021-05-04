@@ -8873,12 +8873,34 @@ th.u-hide--large {
     display: none !important;
   }
 }
-body {
-  background-color: red;
+.main-pager {
+  position: absolute;
 }
-
-.red-text {
-  color: red;
+.main-pager .hero-image {
+  z-index: -1;
+}
+.main-pager .hero-image .text-on-hero {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-pager .hero-image .text-on-hero .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-top: 200px;
+  width: 60%;
+  height: 40%;
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
