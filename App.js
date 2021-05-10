@@ -44,8 +44,8 @@ App.get('/add-user', (req, res)=>{
     console.log("Called");
     const user1 = new User({
         _id: mongoose.Types.ObjectId(),
-        name: "Chouchane Maria",
-        email: "chouchane.maria@gmail.com",
+        name: "EDL",
+        email: "edl@gmail.com",
         password: "123456789",
         provider: "Chouchane Inc."
     })
