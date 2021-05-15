@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
-const Schema = mongoose.Schema;
+const {Schema} = mongoose;
 //const oAuthTypes = ['google', 'facebook']
 
 const UserSchema = new Schema({
@@ -11,6 +11,5 @@ const UserSchema = new Schema({
     provider: {type: String, default:''},
 })
 
-
-module.exports = mongoose.model('User', UserSchema);
-
+const User =  mongoose.model('User', UserSchema);
+export default User

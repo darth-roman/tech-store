@@ -1,7 +1,9 @@
-const mongoose = require('mongoose')
-const User = require('./user.js')
 
-const Schema = mongoose.Schema;
+
+import mongoose from 'mongoose'
+import {User} from './user.js'
+
+const {Schema} = mongoose
 
 const ArticleSchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -16,5 +18,5 @@ const ArticleSchema = new Schema({
     isSoldOut:{type: Boolean, default: false} 
 })
 
-
-module.exports = mongoose.model('Article', ArticleSchema)
+Article = mongoose.model('Article', ArticleSchema)
+export {Article}

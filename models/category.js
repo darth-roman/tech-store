@@ -1,10 +1,12 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
-const Schema = mongoose.Schema
+const {Schema} = mongoose
 
 const CategorySchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
     categoryName: String
 })
 
-module.exports = mongoose.model('Category', CategorySchema)
+
+Category = mongoose.model('Category', CategorySchema)
+export {Category}

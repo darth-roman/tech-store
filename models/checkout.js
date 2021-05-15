@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
-const Schema = mongoose.Schema;
+const {Schema} = mongoose
 
 const CheckOutSchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -16,4 +16,6 @@ const CheckOutSchema = new Schema({
     }]
 })
 
-module.exports = mongoose.model('CheckOut', CheckOutSchema)
+
+const Checkout = mongoose.model('CheckOut', CheckOutSchema)
+export default Checkout

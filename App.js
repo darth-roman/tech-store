@@ -1,13 +1,14 @@
+//const User = require('./models/user.js')
 //const reqParser = require('parse-request')
 
-const express = require('express');
-const App = express()
-const mongoose = require('mongoose')
-const axios = require('axios');
-const { response } = require('express');
-const User = require('./models/user.js')
-const Checkout = require('./models/checkout.js')
 
+import express from 'express'
+import mongoose from 'mongoose'
+import User from './models/user.js'
+import CheckOut from './models/checkout.js'
+
+
+const App = express()
 const PORT = process.env.PORT || 8081
 
 mongoose.connect('mongodb://localhost/edl', {useNewUrlParser: true, useUnifiedTopology: true});
@@ -44,8 +45,8 @@ App.get('/add-user', (req, res)=>{
     console.log("Called");
     const user1 = new User({
         _id: mongoose.Types.ObjectId(),
-        name: "EDL",
-        email: "edl@gmail.com",
+        name: "Aron Chouchane",
+        email: "aron.chouchane@gmail.com",
         password: "123456789",
         provider: "Chouchane Inc."
     })

@@ -1,6 +1,7 @@
-const mongoose = require('mongoose')
+import { mediumorchid } from 'color-name'
+import mongoose from 'mongoose'
 
-const Schema = mongoose.Schema;
+const {Schema} = mongoose
 
 const MerchantSchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
@@ -11,4 +12,5 @@ const MerchantSchema = new Schema({
     company: String
 })
 
-module.exports = mongoose.model('Merchant', MerchantSchema)
+Merchant = mongoose.model('Merchant', MerchantSchema)
+module.exports = Merchant
