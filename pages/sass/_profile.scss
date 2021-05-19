@@ -1,0 +1,48 @@
+@import 'utilities';
+
+.dashboard{
+    background: $dark !important;
+    width: 100%;
+    height: 100vh;
+    .personal{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+        width: 30%;
+        height: 100%;
+
+        background: $primary;
+        color: $light;
+        .info{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .pic{
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .sub-nav{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    }
+
+
+
+    a{
+        text-decoration: none;
+        color: $light;
+    }
+}

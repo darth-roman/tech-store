@@ -7,6 +7,7 @@ const UserSchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
     name: {type: String, default: ''},
     email: {type:String, default: ''},
+    username: {type: String, default: ''},
     password: {type: String, default:''},
     provider: {type: String, default:''},
 })

@@ -10725,6 +10725,65 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bg-darks {
+  background: #001219;
+}
+
+.bg-lights {
+  background: #E9D8A6;
+}
+
+.bg-primaries {
+  background: #005F73;
+}
+
+.bg-warnings {
+  background: #EE9B00;
+}
+
+.bg-dangers {
+  background: #AE2012;
+}
+
+.dashboard {
+  background: #001219 !important;
+  width: 100%;
+  height: 100vh;
+}
+.dashboard .personal {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background: #005F73;
+  color: #E9D8A6;
+}
+.dashboard .personal .info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.dashboard .personal .info .pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.dashboard .personal .sub-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.dashboard a {
+  text-decoration: none;
+  color: #E9D8A6;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;

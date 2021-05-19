@@ -1,0 +1,26 @@
+<div class="personal bg-primaries">
+    <div class="info">
+        <div class="pic">
+            <img src="../img/pp.jpg" alt="">
+        </div>
+        <% if(session.user.username){ %>
+            <p class="details">
+                <%= session.user.username %>
+            </p>
+            <% }%>
+    </div>
+    <div class="sub-nav">
+        <div class="nav-items">
+            <a href="#">Stats</a>
+        </div>
+        <div class="nav-items">
+            <a href="#">Cart</a>
+        </div>
+        <div class="nav-items">
+            <a href="#">Settings</a>
+        </div>
+        <div class="nav-items">
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+</div>
